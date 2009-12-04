@@ -35,9 +35,7 @@
 		NSInteger trackLength = (NSInteger) iTunes.currentTrack.finish;
 		NSInteger playbackPosition = iTunes.playerPosition;
 		NSInteger timeRemaining = (trackLength - playbackPosition);
-		NSLog(@"%d", timeRemaining);
 		timeRemaining = MAX(0, timeRemaining);
-		NSLog(@"%d", timeRemaining);
 		
 		// Parse that shit into a nice human-readable string!
 		int hours = timeRemaining / (60*60);
