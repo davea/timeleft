@@ -46,7 +46,7 @@
 		
 		NSString *titleText;
 		if (hours > 0)
-			titleText = [NSString stringWithFormat:@"-%d:%02d%02d", hours, mins, secs];
+			titleText = [NSString stringWithFormat:@"-%d:%02d:%02d", hours, mins, secs];
 		else
 			titleText = [NSString stringWithFormat:@"-%d:%02d", mins, secs];
 		
